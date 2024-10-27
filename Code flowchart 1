@@ -1,0 +1,20 @@
+CODE 1
+
+A = float(input("Masukkan bilangan A: "))
+B = float(input("Masukkan bilangan B: "))
+C = float(input("Masukkan bilangan C: "))
+
+# Proses untuk menentukan bilangan terbesar
+if A > B:
+    if A > C:
+        terbesar = A
+    else:
+        terbesar = C
+else:
+    if B > C:
+        terbesar = B
+    else:
+        terbesar = C
+
+# Menampilkan hasil
+print("Bilangan terbesar adalah:", terbesar)
