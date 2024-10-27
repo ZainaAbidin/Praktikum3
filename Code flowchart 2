@@ -1,0 +1,26 @@
+Code 2
+
+
+# Meminta input jumlah bilangan yang akan dimasukkan
+N = int(input("Masukkan jumlah bilangan (N): "))
+
+# Inisialisasi nilai maksimum dengan 0
+max_value = 0
+
+# Inisialisasi counter i
+i = 1
+
+# Loop untuk memasukkan bilangan sebanyak N kali
+while i <= N:
+    # Meminta input bilangan
+    bilangan = float(input(f"Masukkan bilangan ke-{i}: "))
+
+    # Memeriksa apakah bilangan lebih besar dari nilai maksimum
+    if bilangan > max_value:
+        max_value = bilangan  # Jika ya, set nilai maksimum menjadi bilangan tersebut
+
+    # Increment nilai i
+    i += 1
+
+# Menampilkan nilai maksimum
+print("Nilai maksimum adalah:", max_value)
